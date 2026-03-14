@@ -7,8 +7,18 @@ import platform
     # os permit to interact with operating system
     # plataform permit the program to undertand what type of operating system the user is using
 
-import readchar
-from colorama import Fore, Back, Style # Import the colorama Module
+import readchar # Import the readchar library, this libary only read a single char and keystrokes
+from colorama import Fore, Back, Style # Import the colorama libary
+
+    # To use the readchar and colorama, it will be necessary use this command in command line
+
+    # Before for you install this library I recommend upgrade python and install pip
+
+    # Windows -> python -m pip install –upgrade python
+    # Linux & MacOS -> pip install –upgrade python
+
+    # readchar -> pip3 install readchar
+    # colorama -> pip3 install reacolorama
 
 # Function to clean the console
 def clear_console():
