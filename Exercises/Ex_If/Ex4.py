@@ -2,13 +2,13 @@ import os
 import platform
 
 # This function clean the console
-# For this, I need to import modulos like « os » and « platform »
+# For this, I need to import modules like « os » and « platform »
 
     # os permit to interact with operating system
-    # plataform permit the program to undertand what type of operating system the user is using
+    # platform permit the program to understand what type of operating system the user is using
 
-import readchar # Import the readchar library, this libary only read a single char and keystrokes
-from colorama import Fore, Back, Style # Import the colorama libary
+import readchar # Import the readchar library, this library only read a single char and keystrokes
+from colorama import Fore, Back, Style # Import the colorama library
 
     # To use the readchar and colorama, it will be necessary use this command in command line
 
@@ -43,7 +43,7 @@ def print_header(choice):
             print("             VIEW BALANCE               ")
             print("========================================")
 
-# Fuction to add balance
+# function to add balance
 def add_balance(balance):
     clear_console()
     print_header(2)
@@ -68,7 +68,7 @@ def add_check(balance):
 
     if(balance >= check):
         balance = balance - check
-        print(f"\n {Fore.MAGENTA} > {Fore.WHITE} Check cahsed")
+        print(f"\n {Fore.MAGENTA} > {Fore.WHITE} Check cashed")
         print(f" {Fore.MAGENTA} > {Fore.WHITE} Your balance is {Fore.GREEN}{balance}€{Fore.WHITE}")
     else:
         print(f" {Fore.MAGENTA} > {Fore.WHITE} Uncashed check")

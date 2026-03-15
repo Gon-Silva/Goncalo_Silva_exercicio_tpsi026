@@ -2,10 +2,10 @@ import os
 import platform
 
 # This function clean the console
-# For this, I need to import modulos like « os » and « platform »
+# For this, I need to import modules like « os » and « platform »
 
     # os permit to interact with operating system
-    # plataform permit the program to undertand what type of operating system the user is using
+    # platform permit the program to understand what type of operating system the user is using
 
 # Function to clean the console
 def clear_console():
