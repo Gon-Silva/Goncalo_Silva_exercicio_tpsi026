@@ -46,6 +46,14 @@ def descending_array(arr, size):
 
     return arr
 
+# Function that print an array
+def print_array(arr, size):
+    for i in range(size):
+        print(arr[i], end="")
+        if(i != size - 1):
+            print(", ", end="")
+    print(" ")
+
 def main():
     clear_console()
 
@@ -65,24 +73,12 @@ def main():
     print("")
 
     ascending_array(arr, size)
-
     print(" > Ascending: ", end="")
-
-    for i in range(size):
-        print(arr[i], end="")
-        if(i != size):
-            print(", ", end="")
-
-    print("")
+    print_array(arr, size)
 
     descending_array(arr, size)
-
     print(" > Descending: ", end="")
-
-    for i in range(size):
-        print(arr[i], end="")
-        if(i != size):
-            print(", ", end="")
+    print_array(arr, size)
 
     print("\n")
 
