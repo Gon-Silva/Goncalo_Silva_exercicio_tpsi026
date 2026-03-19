@@ -53,7 +53,7 @@ def main():
     arr_number = []
     i = 0;
 
-    while i < 10:
+    while i < 30:
         print(f"{Fore.MAGENTA} > {Fore.WHITE}Enter your {Fore.BLUE}{i+1}º{Fore.WHITE} number [0-50]")
 
         try:
