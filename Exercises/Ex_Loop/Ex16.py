@@ -35,7 +35,7 @@ def print_header(choice):
             print("        CALCULATE THE AVERAGE OF EVEN NUMBERS      ")
             print("===================================================")
 
-# Perform arithmetic operations
+# Perform calculate the average of even number
 def calculate_average_even(arr_number):
     print()
     total = 0
