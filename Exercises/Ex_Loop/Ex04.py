@@ -46,12 +46,11 @@ def check_prime_number(number):
     elif number % 2 == 0:
         result = "compound"
     else:
+        result = "prime"
         for i in range(3, math.isqrt(number) + 1, 2):
             if number % i == 0:
                 result = "compound"
                 break
-
-    result = "prime"
 
     return print(f"{Fore.MAGENTA} > {Fore.WHITE}The number, {Fore.BLUE}{number}{Fore.WHITE}, is {result}")
 
