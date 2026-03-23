@@ -51,6 +51,8 @@ def check_prime_number(number):
                 result = "compound"
                 break
 
+    result = "prime"
+
     return print(f"{Fore.MAGENTA} > {Fore.WHITE}The number, {Fore.BLUE}{number}{Fore.WHITE}, is {result}")
 
 # Main Function
