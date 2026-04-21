@@ -28,21 +28,28 @@ def style_p(message):
     )
 
 
-def show_state(list: list, title: str, location: int):
+def show_state(lst: list, title: str, location: int):
     print()
     style_1(title)
-    style_p(list)
-    style_p(f"list {Fore.YELLOW}[{location}]{Fore.RESET} -> {list[location]}")
-    style_p(f"list {Fore.YELLOW}[{location + 1}]{Fore.RESET} -> {list[location + 1]}")
+    style_p(lst)
+    style_p(f"list {Fore.YELLOW}[{location}]{Fore.RESET} -> {lst[location]}")
+    style_p(f"list {Fore.YELLOW}[{location + 1}]{Fore.RESET} -> {lst[location + 1]}")
     print()
 
 
-def swapped_list(list: list, position: int):
+def swapped_list(lst: list, position: int):
     cls()
-    show_state(list, "Before: ", position)
-    list[position], list[position + 1] = list[position + 1], list[position]
-    show_state(list, "After: ", position)
+    show_state(lst, "Before: ", position)
+    lst[position], lst[position + 1] = lst[position + 1], lst[position]
+    show_state(lst, "After: ", position)
     break_point()
+
+def string_to_word(string :str):
+    string_list = []
+    for i in range(len(string)):
+        string_list.append(string[i])
+
+    return string_list
 
 
 def sorted(lst: list):
@@ -91,16 +98,17 @@ def sorted(lst: list):
 def main():
     cls()
 
-    fruit_list = ["casamento", "casa", "abacaxi", "ananas", "lapis"]
+    palavra = "algoritmo"
+    palavra_list = string_to_word(palavra)
     # Expect output -> ["abacaxi", "banana", "laranja", "uva"]
 
-    sorted(fruit_list)
+    sorted(palavra_list)
 
     cls()
 
     print()
     style_p("End")
-    style_p(fruit_list)
+    style_p(palavra_list)
 
 
 if __name__ == "__main__":
